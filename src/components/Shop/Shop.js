@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import RandomlyShowed from '../Selected-Items/RandomlyShowed';
 import Selected from '../Selected-Items/Selected';
 import './Shop.css'
 
@@ -7,6 +8,7 @@ import './Shop.css'
 const Shop = () => {
           const [products, setProducts] = useState([]);
           const [selected, setSelected] = useState([]);
+          const [random, setRandom] = useState([]);
           useEffect(() => {
                     fetch('products.json')
                               .then(res => res.json())
@@ -16,6 +18,12 @@ const Shop = () => {
           const addToCart = (product) => {
                     const newItem = [...selected, product];
                     setSelected(newItem);
+          }
+
+          const randomProduct = (random) => {
+                    let item = random[Math.floor(Math.random() * random.length)]
+                    setRandom(item);
+                    // console.log(item);
           }
 
 
@@ -41,6 +49,18 @@ const Shop = () => {
                                                             selectedNew={selected}
                                                   ></Selected>)
                                         }
+
+                                        <div className='choose-container'>
+                                                  <button onClick={() => randomProduct(selected)} className='choose-btn'>Choose one for me</button>
+                                        </div>
+
+                                        {
+                                                  <RandomlyShowed key={random.id} random={random}
+                                                            randomHanlde={random}
+
+                                                  ></RandomlyShowed>
+                                        }
+
                               </div>
                     </div >
 

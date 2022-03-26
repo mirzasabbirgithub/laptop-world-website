@@ -11,11 +11,24 @@
 }
 
 @media screen and (max-width:600px) {
-          .shop-container{
+          .shop-container,.choose-container{
           display: block;
           }
           .product-container{
           display: block;
           grid-template-columns: repeat(1, 0fr);
           }
+      }
+
+      .choose-btn{
+          padding: 10px;
+          border-radius: 15px;
+          background-color: #4360df;
+          color: #ffff;
+          border:none;
+      }
+
+      .choose-btn:hover{
+          background-color: orange;
+          
       }
