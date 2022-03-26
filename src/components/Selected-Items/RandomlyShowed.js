@@ -2,7 +2,7 @@ import React from 'react';
 import './RandomlyShowed.css'
 const RandomlyShowed = ({ random }) => {
           return (
-                    <div class='RandomlyShowed'>
+                    <div className='RandomlyShowed'>
                               <h4>{random.name}</h4>
                     </div>
           );

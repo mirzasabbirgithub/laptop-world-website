@@ -27,9 +27,8 @@ const Shop = () => {
           }
 
 
-          const removeProduct = (selected) => {
-                    const newRemove = selected;
-                    setRemove(newRemove);
+          const removeProduct = () => {
+                    setRandom([]);
           }
 
 
@@ -54,6 +53,12 @@ const Shop = () => {
                                                   selected.map(selected => <Selected key={selected.id} selected={selected}
                                                             selectedNew={selected}
                                                   ></Selected>)
+                                        }
+
+                                        {
+                                                  <Selected key={selected.id} selected={selected}
+                                                            selectedNew={selected}
+                                                  ></Selected>
                                         }
 
                                         <div className='choose-container'>
