@@ -17,6 +17,8 @@ const Shop = () => {
                     const newItem = [...selected, product];
                     setSelected(newItem);
           }
+
+
           return (
                     <div className="shop-container">
                               <div className="product-container">
@@ -31,10 +33,13 @@ const Shop = () => {
                               <div className="selected-container">
                                         <div>
                                                   <h2>Selected Item</h2>
+
                                         </div>
 
                                         {
-                                                  selected.map(selected => <Selected key={selected.id} selected={selected}></Selected>)
+                                                  selected.map(selected => <Selected key={selected.id} selected={selected}
+                                                            selectedNew={selected}
+                                                  ></Selected>)
                                         }
                               </div>
                     </div >
