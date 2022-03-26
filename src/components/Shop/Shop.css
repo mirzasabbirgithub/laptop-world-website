@@ -28,6 +28,15 @@
           border:none;
       }
 
+      .remove-btn{
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #c53535;
+        color: #ffff;
+        border:none;
+        margin-top: 3px;
+      }
+
       .choose-btn:hover{
           background-color: orange;
           

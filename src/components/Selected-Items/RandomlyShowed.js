@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './RandomlyShowed.css'
 const RandomlyShowed = ({ random }) => {
           return (
-                    <div>
-                              <h2>{random.name}</h2>
+                    <div class='RandomlyShowed'>
+                              <h4>{random.name}</h4>
                     </div>
           );
 };

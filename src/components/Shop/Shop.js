@@ -9,6 +9,7 @@ const Shop = () => {
           const [products, setProducts] = useState([]);
           const [selected, setSelected] = useState([]);
           const [random, setRandom] = useState([]);
+          const [remove, setRemove] = useState([]);
           useEffect(() => {
                     fetch('products.json')
                               .then(res => res.json())
@@ -23,7 +24,12 @@ const Shop = () => {
           const randomProduct = (random) => {
                     let item = random[Math.floor(Math.random() * random.length)]
                     setRandom(item);
-                    // console.log(item);
+          }
+
+
+          const removeProduct = (selected) => {
+                    const newRemove = selected;
+                    setRemove(newRemove);
           }
 
 
@@ -51,14 +57,20 @@ const Shop = () => {
                                         }
 
                                         <div className='choose-container'>
-                                                  <button onClick={() => randomProduct(selected)} className='choose-btn'>Choose one for me</button>
+                                                  <button onClick={() => randomProduct(selected)} className='choose-btn'>Choose 1 for me</button>
                                         </div>
+                                        <div className='remove-container'>
+                                                  <button onClick={() => removeProduct(selected)} className='remove-btn'>Choose Again</button>
+                                        </div>
+
 
                                         {
                                                   <RandomlyShowed key={random.id} random={random}
                                                             randomHanlde={random}
 
                                                   ></RandomlyShowed>
+
+
                                         }
 
                               </div>
