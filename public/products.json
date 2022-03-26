@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Dell Inspiron 15 ",
+    "price": 800,
+    "img": "https://i.dell.com/is/image/DellContent//content/dam/global-asset-library/Products/Notebooks/Inspiron/15_7506_2n1/in7506t_ctb_00055lf110_gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3634&hei=2218&qlt=100,0&resMode=sharp2&size=3634,2218"
+  },
+  {
+    "id": "2",
+    "name": "HP 15s-du1117TU",
+    "price": 750,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1117tu/15s-du1117tu-001-500x500.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Apple MacBook Air 13.3-Inch",
+    "price": 1200,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=80&.v=1633027804000"
+  },
+  {
+    "id": "4",
+    "name": "Dell Inspiron 15 3511",
+    "price": 650,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/dell/inspiron-15-3511/inspiron-15-3511-07-500x500.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Asus Vivobook X515MA",
+    "price": 500,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15-x515ea/vivobook-15-x515ea-01-500x500.jpg"
+  },
+  {
+    "id": "6",
+    "name": "HP Pavilion 15-eh1890AU",
+    "price": 700,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/pavilion-15-eh1890au/pavilion-15-eh1890au-01-500x500.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Apple MacBook Pro 13.3-Inch",
+    "price": 1800,
+    "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_IN?wid=640&hei=595&fmt=jpeg&qlt=95&.v=1632948896000"
+  },
+  {
+    "id": "8",
+    "name": "ASUS ExpertBook L1",
+    "price": 600,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/expertbook-l1-l1500cda/expertbook-l1-l1500cda-01-500x500.jpg"
+  },
+  {
+    "id": "9",
+    "name": "HP Pavilion 15-eg1678TU",
+    "price": 850,
+    "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/pavilion-15-eg1678tu/pavilion-15-eg1678tu-01-500x500.jpg"
+  }
+]
